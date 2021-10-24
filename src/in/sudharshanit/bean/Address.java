@@ -10,6 +10,10 @@ public class Address {
 		this.mandal = mandal;
 		this.district = district;
 	}
+	@Override
+	public String toString() {
+		return "Address [village=" + village + ", mandal=" + mandal + ", district=" + district + "]";
+	}
 	
 	
 

@@ -1,5 +1,8 @@
 package in.sudharshanit.bean;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Student {
 
 	private Integer studentId;
@@ -14,6 +17,16 @@ public class Student {
 		this.collegeName = collegeName;
 		this.branchName = branchName;
 		this.address=address;
+	}
+	public static String displayStudents(List<Student> listStudents){
+		//System.out.println(listStudents);
+		listStudents.forEach(s->System.out.println(s));
+		return "Student Details Displayed Here Successufully";
+	}
+	@Override
+	public String toString() {
+		return "Student [studentId=" + studentId + ", studentName=" + studentName + ", collegeName=" + collegeName
+				+ ", branchName=" + branchName + ", address=" + address + "]";
 	}
 	
 	
