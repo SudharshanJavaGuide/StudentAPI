@@ -20,6 +20,8 @@ public class StudentRestAPITest {
 		listStudents.add(s2);
 		String resMsg = Student.displayStudents(listStudents);
 		System.out.println(resMsg);
+		String welMessage = Student.welcome("Sudharshan Yadav");
+		System.out.println(welMessage);
 		}
 
 }

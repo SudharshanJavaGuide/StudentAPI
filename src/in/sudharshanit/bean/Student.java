@@ -18,10 +18,11 @@ public class Student {
 		this.branchName = branchName;
 		this.address=address;
 	}
-	public String welcome(String user) {
+	public static String welcome(String user) {
 		String welMsg="Welcome To Incedo India Private Limited Mr."+user;
 		return welMsg;
 	}
+	
 	public static String displayStudents(List<Student> listStudents){
 		//System.out.println(listStudents);
 		listStudents.forEach(s->System.out.println(s));
